@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jills Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 500px;
+            height: auto;
+        }
+        .featured-image img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 20 px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campbell Photography</h1>
+        <p>Sports Photographer</p>
+        <hr>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I am Jill and I specialize in sports photography!</p>
+        <hr>
+    </section>
+
+    <section id="featured-image" class="featured-image">
+        <h2>Featured Image</h2>
+        <picture>
+            <source srcset="celly.jpg" media="(min-width: 768px)">
+            <img src="celly.jpg" alt="Featured Photography" loading="lazy">
+        </picture>
+        <hr>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="team.jpg">
+            <img src="trophy.jpg">
+        </div>
+        <hr>
+    </section>
+
+    <section id="services">
+        <h2>Photography Services</h2>
+        <ul>
+            <li>Lacrosse Games</li>
+            <li>Football Games</li>
+            <li>Volleyball Games</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: jcampbel2024@students.curry.edu</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Campbell Photography. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

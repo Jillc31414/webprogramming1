@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Main Webpage</title>
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #f191cb; /* Dark background for navbar */
+            padding: 10px 20px;
+            position: sticky; /* Keeps navbar fixed at the top */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            margin: 0 20px; /* Space between the links */
+        }
+
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #fd007a; /* Hover effect color */
+        }
+
+        /* Main content styling */
+        main {
+            text-align: center;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #fbbce3;
+        }
+
+        /* Make it responsive on small screens */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-direction: column; /* Stack the links vertically */
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="deliverable3.html">Home</a></li>
+                <li><a href="deliverable3task1.html">Daily News</a></li>
+                <li><a href="deliverable3task2.html">Campbell Photography</a></li>
+                <li><a href="deliverable3task3.html">Visit Massachusetts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to My Main Webpage</h1>
+        <p>Here you can navigate to my other sites.</p>
+    </main>
+
+</body>
+</html>

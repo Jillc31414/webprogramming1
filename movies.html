@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Movies</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffc7eb;
+            color: #333;
+        }
+        header {
+            background: #ffa2eb;
+            color: rgb(142, 2, 102);
+            font-family: 'Copperplate';
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #990066;
+            text-align: center;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li, ol li {
+            font-size: 1.1em;
+        }
+
+        .posters {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+        }
+
+        figure {
+            background-color: #f900b3;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            max-width: 300px;
+        }
+
+        figure:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: 1.1em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr; 
+            }
+
+            .posters {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+
+<header>
+    <h1>Jill's Favorite Movies</h1>
+</header>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h2>Honorable Mentions</h2>
+            <ul>
+                <li>Captain America: The First Avenger</li>
+                <li>Avengers: Endgame</li>
+                <li>The Muppets Movie</li>
+                <li>When Harry Met Sally</li>
+                <li>How to Lose A Guy in 10 Days</li>
+                <li>Dead Poets Society</li>
+                <li>John Wick Movies</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h2>Top 3 Movies</h2>
+            <ol>
+                <li>Remember the Titans</li>
+                <li>American Psycho</li>
+                <li>Donnie Darko</li>
+            </ol>
+        </div>
+        
+        <div class="posters">
+            <figure>
+                <img src="rememberthetitans.jpg">
+                <figcaption>Remember the Titans</figcaption>
+            </figure>
+            <figure>
+                <img src="americanpsycho.jpg">
+                <figcaption>American Psycho</figcaption>
+            </figure>
+            <figure>
+                <img src="donniedarko.jpg">
+                <figcaption>Donnie Darko</figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

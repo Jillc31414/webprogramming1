@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston City</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbb6ee;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+        .header {
+            background-color: #ff8dea;
+            color: rgb(125, 2, 109);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            text-align: center;
+            background-color: #ffacf0;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #890087;
+            font-weight: bold;
+        }
+        .sidebar {
+            background-color: #ffa7ed;
+            width: 20%;
+        }
+        .content {
+            width: 60%;
+        }
+        .featured-image {
+            text-align: center;
+        }
+        .footer {
+            background-color: #ff90eb;
+            color: rgb(169, 0, 141);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3" class="header">Welcome to Boston City</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="nav">
+                <a href="#home">Home</a>
+                <a href="#history">History</a>
+                <a href="#attractions">Attractions</a>
+                <a href="#contact">Contact</a>
+                <input type="text" placeholder="Search...">
+            </td>
+        </tr>
+        <tr>
+            <td class="sidebar">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>Founded: 1630</li>
+                    <li>Population: ~700,000</li>
+                    <li>Famous for: Harvard, MIT, Freedom Trail</li>
+                </ul>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Boston Tourism</a></li>
+                    <li><a href="#">City Government</a></li>
+                    <li><a href="#">Public Transport</a></li>
+                </ul>
+            </td>
+            <td class="content">
+                <h2>About Boston</h2>
+                <p>Boston is one of the oldest cities in the United States and is known for its rich history, education and culture.</p>
+                <h2 id="history">History</h2>
+                <p>Boston played a major role in the American Revolution, with events like the Boston Tea Party and the Battle of Bunker Hill.</p>
+                <h2 id="attractions"> Top Attractions</h2>
+                <ul>
+                    <li>Freedom Trail</li>
+                    <li>Fenway Park</li>
+                    <li>Boston Common</li>
+                    <li>New England Aquarium</li>
+                </ul>
+            </td>
+            <td class="featured-image">
+                <img src="boston.jpg"width="300">
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">Contact: info@bostoncity.com</td>
+            <td class="footer">&copy; 2025 Boston City</td>
+            <td class="footer">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

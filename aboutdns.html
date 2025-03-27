@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>All About DNS</title>
+    <body>
+        <h1 style="color: blue; text-align: center;"><u>All About DNS</u></h1>
+        <h2>What is DNS?</h2>
+        <p>DNS stands for Domain Name System. It converts website names into numerical IP addresses so your computer can find and load web pages.</p>
+        <h3>DNS is like the phonebook of the internet.</h3>
+        <p>Humans access information online through domain names, like google.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.</p>
+        <p>An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device- like a street address is used to find a particular home.When a user wants to load a webpage, a translation must occur between what a user types into their web browser (google.com) and the machine-friendly address necessary to locate the google.com webpage.</p>
+        <h2>The 8 steps in a DNS lookup:</h2>
+        <ol>
+            <li>A user types 'example.com' into a web browser and the query travels into the Internet and is received by a DNS recursive revolver.</li>
+            <li>The resolver then queries a DNS root nameserver.</li>
+            <li>The root server then responds to the resolver with the address of a Top Level Domain (TLD) DNS server (such as .com or .net), which stores the information for its domains. When searching for example.com, our request is pointed toward the .com TLD.</li>
+            <li>The resolver then makes a request to the .com TLD.</li>
+            <li>The TLD server then responds with the IP address of the domain's nameserver, example.com.</li>
+            <li>Lastly, the recursive revolver sends a query to the domain's nameserver.</li>
+            <li>The IP address for example.com is then returned to the resolver from the nameserver.</li>
+            <li>The DNS resolver then responds to the web browser with the IP address of the domain requested initially.</li>
+        </ol>
+        <p>Once the 8 steps of the DNS lookup have returned the IP address for example.com, the browser is able to make the request for the web page:</p>
+        <ol>
+            <li>The browser makes a HTTP request to the IP address.</li>
+            <li>The server at that IP returns the webpage to be rendered in the browser.</li>
+        </ol>
+        <img src="https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-lookup-diagram.png" alt=DNS Lookup" width="600" height="auto">
+        <h3>What is a DNS resolver?</h3>
+        <ul>
+            <li>The DNS resolver is the first stop in the DNS lookup, and it is responsible for dealing with the client that made the initial request. The resolver starts the sequence of queries that ultimately leads to a URL being translated into the necessary IP address.</li>
+        </ul>
+        <h4>For more information, head to <a href="https://www.cloudflare.com/learning/dns/what-is-dns/">CloudFlare</a></h4>
